@@ -2,7 +2,7 @@ package Recursion;
 
     class LastIndexOf {
 
-        // Stack building approach
+        
     static void lastIndexOf(int [] arr , int index , int target){
 
         if(index < 0){
@@ -15,8 +15,8 @@ package Recursion;
         }
 
         lastIndexOf(arr, index - 1, target);
-
     }
+
 
     public static void main(String[] args) {
         int arr [] = {2, 1, 6 , 7 , 1, 4, 10};
