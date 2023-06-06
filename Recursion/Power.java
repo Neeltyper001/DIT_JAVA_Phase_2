@@ -22,7 +22,7 @@ class Power{
         return num * calcPower(num, power - 1);
     }
 
-    // Mediator method for Stack Building approach method
+    //   Stack Building Mediator method
     static void power(int num , int power){
         power(num , power , 1);            
     }

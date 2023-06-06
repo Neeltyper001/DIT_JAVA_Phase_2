@@ -15,11 +15,12 @@ public class Fourth {
         
     }
 
-    // Mediator
+    //   Stack Building Mediator method
         static void fourth(int num){
             fourth(num, 0);
         }
 
+        // Using Stack Falling Approach
         static double fourth_2(int num){
             if(num == 1){
                 return (double)num;

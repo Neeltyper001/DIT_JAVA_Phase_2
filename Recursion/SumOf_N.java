@@ -13,7 +13,7 @@ public class SumOf_N {
         sumOf_N(n-1, result);
     }
 
-    // Mediator method for Stack Buildin Approach Method
+    // Stack Building Mediator Method
   static  void sumOf_N(int n){
         sumOf_N(n , 0);
     }
