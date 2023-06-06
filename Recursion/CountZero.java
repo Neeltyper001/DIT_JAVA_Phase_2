@@ -15,7 +15,7 @@ public class CountZero {
             countZero(num/10, count);
         }
     }
-// Mediator method for Stack Building Approach method
+    //   Stack Building Mediator method
     static void countZero(int num){
         countZero(num, 0);
     }
