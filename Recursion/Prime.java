@@ -16,10 +16,6 @@ public class Prime {
         prime(num, counter + 1);
     }
 
-    static void prime(int num){
-        prime(num , 2);
-    }
-
     // Using Stack falling approach
     static boolean primeNum(int num , int counter){
         if(counter == 2){
@@ -33,12 +29,20 @@ public class Prime {
         return num % counter == 0;
     }
 
+
+    //  Stack building mediator method
+    static void prime(int num){
+        prime(num , 2);
+    }
+
+
+    // Stack Falling mediator method
     static boolean primeNum(int num){
         return primeNum( num , num - 1);
     }
 
     public static void main(String[] args) {
         prime(42);  
-        System.out.println(primeNum(11)?" not prime" : " prime");
+        System.out.println(primeNum(11)?" not prime" : "a prime number");
     }
 }
