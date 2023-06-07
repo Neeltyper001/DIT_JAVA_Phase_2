@@ -1,7 +1,7 @@
 package Recursion;
 
 public class ReplaceAllOccurence {
-
+    // Printing of array using stack building apporach
     static void printArr(int arr[] , int index){
         if(index == arr.length - 1){
             return;
@@ -16,8 +16,7 @@ public class ReplaceAllOccurence {
         }
 
         if(arr[index] == search){
-            arr[index] = replacement;
-            // System.out.print(arr[index]+" ");       
+            arr[index] = replacement;             
         }
 
         replaceAllOccurence(arr, index - 1, search ,  replacement);
@@ -40,7 +39,7 @@ public class ReplaceAllOccurence {
         }
         return;
     }
-
+    // Stack
     static void replaceAllOccurences(int arr[] , int search, int replacement){
         replaceAllOccurences(arr, arr.length - 1 , search, replacement);
 
@@ -54,6 +53,5 @@ public class ReplaceAllOccurence {
         System.out.println();
         replaceAllOccurences(arr_2, 6, 7);
         printArr(arr_2, 0);    
-
     }
 }
