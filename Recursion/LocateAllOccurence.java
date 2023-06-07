@@ -1,16 +1,15 @@
 package Recursion;
 public class LocateAllOccurence {
+    
+    static int locs = 0;
 
-    // static int [] arrOfIndexes = new int[7];
-    // static int locs = 0;
-
-    // static void printArr(int indexNo){
-    //     if( arrOfIndexes.length == indexNo){
-    //         return;
-    //     }
-    //     System.out.print(arrOfIndexes[indexNo]+" ");
-    //     printArr(indexNo + 1);
-    // }
+    static void printArr(int arrOfIndexes [] , int indexNo){
+        if( arrOfIndexes.length == indexNo){
+            return;
+        }
+        System.out.print(arrOfIndexes[indexNo]+" ");
+        printArr(  arrOfIndexes ,indexNo + 1);
+    }
 
     // Stack building Approach
 
@@ -33,27 +32,36 @@ public class LocateAllOccurence {
     }
 
     // Stack Falling Apporach
-    static void locateAllOccurences(int arr[] , int index, int search){
+    static int [] locateAllOccurences(int arr[] , int index, int countOccur,  int search ){
         if(index < 0){
-            return;
+            int result[] = new int[countOccur];
+            return result;
         }
 
-        locateAllOccurences(arr, index -1 , search);
         if(arr[index] == search){
-            System.out.print(index+" ");
+            ++countOccur;            
         }
 
-        return;
+     int result [] =  locateAllOccurences(arr, index - 1 , countOccur ,   search );
+        if(arr[index] == search){
+            result[countOccur - 1] = index;
+        }
+
+        return result;
     }
 
-    static void locateAllOccurences(int arr[] , int search){
-        locateAllOccurences(arr , arr.length - 1 , search);
+    static int []  locateAllOccurences(int arr[] , int search){
+       return  locateAllOccurences(arr , arr.length - 1 , 0 , search);
     }
 
     public static void main(String[] args) {
-        int arr [] = {1, 1, 6 , 7 , 1, 4, 10};
-        locateAllOccurence(arr, 1);
+        int arr_1 [] = {1, 1, 6 , 7 , 1, 4, 10};
+        int arr_2 [] = {1, 1, 6 , 6 , 1, 6, 10};
+        int arr_3 [] ;
+        locateAllOccurence(arr_1, 1);        
         System.out.println();
-        locateAllOccurences(arr, 1);
+         arr_3 =  locateAllOccurences(arr_2, 6);
+         printArr(arr_3, 0);
+       
     }
 }
