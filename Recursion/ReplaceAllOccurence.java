@@ -39,7 +39,7 @@ public class ReplaceAllOccurence {
         }
         return;
     }
-    // Stack
+    // Stack Fallind mediator
     static void replaceAllOccurences(int arr[] , int search, int replacement){
         replaceAllOccurences(arr, arr.length - 1 , search, replacement);
 
