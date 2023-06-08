@@ -1,7 +1,7 @@
 package Recursion;
 
 public class StringHash {
-    
+    // Using Stack Building Approach
     static void stringHashing(StringBuilder targetString , int start , int end ){
 
         if(targetString.length() == end){

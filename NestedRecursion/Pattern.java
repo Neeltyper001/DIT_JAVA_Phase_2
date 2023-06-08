@@ -7,7 +7,7 @@ package NestedRecursion;
         }
         
         printStar(stars - 1);
-        System.out.println("*");
+        System.out.print("* ");
         return;
     }
 
@@ -18,5 +18,10 @@ package NestedRecursion;
 
         printLine(rows - 1, stars);
         printStar(stars);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        printLine(5, 5);
     }
 }
