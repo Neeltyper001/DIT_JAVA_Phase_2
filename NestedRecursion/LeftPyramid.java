@@ -1,7 +1,7 @@
 package NestedRecursion;
 
 public class LeftPyramid {
-
+// P-3
 // Stack Building Approach
     static void printStars_2(int stars)  {
         if(stars == 0){

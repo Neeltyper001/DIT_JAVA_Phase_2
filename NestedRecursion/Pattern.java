@@ -1,7 +1,7 @@
 package NestedRecursion;
 
  class Pattern {
-
+// P-1
     // Stack Building Approach
     static void printStar(int stars){
         if(stars  == 0){
