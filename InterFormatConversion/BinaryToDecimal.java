@@ -17,6 +17,6 @@ public class BinaryToDecimal {
     }
 
     public static void main(String[] args) {
-        System.out.println(binaryToDecimal(101));
+        System.out.println(binaryToDecimal(111));
     }
 }
