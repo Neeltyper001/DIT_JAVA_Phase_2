@@ -2,8 +2,9 @@ package InterFormatConversion;
 
 public class HexaToBinary {
     
-    /*------CODE SECTION FROM LINE NO. 6 TO 42 ARE CONSIDERED TO BE AS A SINGLE UNIT-----*/
-    static int rawDecimalToBinary(int num){
+    /*------CODE SECTION SANDWICHED BETWEEN THE COMMENTS  ARE CONSIDERED TO BE AS A SINGLE UNIT-----*/
+    
+    static int rawDecimalToBinary(int num){ // This method for converting decimal into raw binary
 
         if(num == 0){
             return 0;
@@ -16,7 +17,7 @@ public class HexaToBinary {
         
     }
 
-    static int countBinaryStrings(int num){
+    static int countBinaryStrings(int num){ // This method for counting the number of binary digits in a binary string
         if(num == 0){
             return 0;
         }
@@ -26,7 +27,7 @@ public class HexaToBinary {
 
     }
 
-    static StringBuilder formattedBinary(int rawBinary , int count){
+    static StringBuilder formattedBinary(int rawBinary , int count){ // This method for providing a 4 digit-format binary into string
         if(count == 0){
             return new StringBuilder(""+rawBinary);
         }
@@ -35,7 +36,7 @@ public class HexaToBinary {
         return result;
     }
     
-    static StringBuilder properDeciamlToBinary(int num){
+    static StringBuilder properDeciamlToBinary(int num){    // method where all these 3 above methods work together
         // int rawBinary = rawDecimalToBinary(num);
         int count = countBinaryStrings(rawDecimalToBinary(num));
         if(count % 4 == 0){
