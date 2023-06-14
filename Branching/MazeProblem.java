@@ -1,36 +1,38 @@
 package Branching;
 
-import java.net.SocketTimeoutException;
+import java.util.ArrayList;
 
 public class MazeProblem {
     
-    static void mazeProblem(int right , int down , String movementType){
+    static ArrayList<String> mazeProblem(int right , int down){
 
-        if(right == 4 && down == 4){           
-            return;
+        if(right == 2 && down == 2){
+            ArrayList<String> smallResult = new ArrayList<>();
+            smallResult.add("");
+            return smallResult;
         }
 
-        if(right == 3 && down == 3){
-            System.out.println(" Reached !");
-            System.out.println();
-            return;
-        }
-        if(right == 4 || down == 4 ){             
-            return;
+        if(right > 2 || down > 2){
+            ArrayList<String> smallResult = new ArrayList<>();
+            return smallResult;
         }
 
-        if(movementType == "right"){
-            System.out.print("R");
+        ArrayList<String>finalResult = new ArrayList<>();
+        
+        ArrayList<String>rightResult = mazeProblem(right + 1, down);
+        for(String strs: rightResult){
+            finalResult.add(strs + 'R');
         }
 
-        else{
-            System.out.print("D");
-        }                
-        mazeProblem(right + 1, down , "right");
-        mazeProblem(right, down + 1 , "down");            
+        ArrayList<String>downResult = mazeProblem(right , down + 1);
+        for(String strs: downResult){
+            finalResult.add(strs + 'D');
+        }
+        
+        return finalResult;
     }
 
     public static void main(String[] args) {
-        mazeProblem(0, 0, "");
+        System.out.println(mazeProblem(0,0));
     }
 }
