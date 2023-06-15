@@ -21,7 +21,7 @@ public class DiceProblem {
         for(int i=1 ; i<= 6; i++){
             ArrayList<String> result = diceProblem(currentValue + i , endValue);
             for(String elem: result){
-                finalResult.add(i + elem);
+                finalResult.add(elem + i);
             }
         }
 
