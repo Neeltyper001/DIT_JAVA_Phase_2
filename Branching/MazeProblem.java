@@ -1,7 +1,7 @@
 package Branching;
 
 import java.util.ArrayList;
-
+// Using Stack Fall Approach
 public class MazeProblem {
     
     static ArrayList<String> mazeProblem(int right , int down){
