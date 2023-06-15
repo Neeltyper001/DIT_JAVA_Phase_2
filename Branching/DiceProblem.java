@@ -1,6 +1,6 @@
 package Branching;
 import java.util.ArrayList;
-
+// Using stack fall approach
 public class DiceProblem {
 
     static ArrayList<String> diceProblem(int currentValue , int endValue){
