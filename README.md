@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DIT_JAVA_Phase_2
 ## This is the Phase 2 as a part Technical Training under the mentorship of Brain-Mentors  
 ## Table Of Contents  
@@ -9,3 +10,7 @@
 |   3  | Assignment-3|      ArrayRecursion                        |  7 June 2023  |
 |   4  | Assignment-4|      Branching                             |  8 June 2023  |
 |   5  | Questions   |      Practice Questions                    |   On going    |
+=======
+# DIT_JAVA_Phase_2
+This is the Phase 2 repository
+>>>>>>> 88a9b4a (updated)
