@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # DIT_JAVA_Phase_2
 ## This is the Phase 2 as a part Technical Training under the mentorship of Brain-Mentors  
 ## Table Of Contents  
@@ -13,3 +14,7 @@
 =======
 
 >>>>>>> 88a9b4a (updated)
+=======
+# DIT_JAVA_Phase_2
+This is the Phase 2 repository
+>>>>>>> dabdc68bcce7eeb3a2a3afdd7f2e4e28c54e74be
