@@ -1,9 +1,8 @@
-package ArrayRecursion;
+package Array;
 
-public class test {
-
+public class First {
     public static void main(String[] args) {
-        String arr [] = {"1","3","4","2"};
+        int arr[] = {10,20,90};
         System.out.println(arr.toString());
     }
 }
