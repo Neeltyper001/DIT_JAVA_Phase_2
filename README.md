@@ -11,6 +11,5 @@
 |   4  | Assignment-4|      Branching                             |  8 June 2023  |
 |   5  | Questions   |      Practice Questions                    |   On going    |
 =======
-# DIT_JAVA_Phase_2
-This is the Phase 2 repository
+
 >>>>>>> 88a9b4a (updated)
