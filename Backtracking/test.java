@@ -3,9 +3,8 @@ package Backtracking;
 public class test {
     
     public static void main(String[] args) {
-        
-        char val = 48 + 1;
-        System.out.println(getClass(val));
+        int inval = 1;
+        char val = (char)(48 + inval);        
         System.out.println(val);
         System.out.println("Hello world");        
     }
