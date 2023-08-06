@@ -28,5 +28,6 @@ public class test {
         System.out.println(list);
         list.add(list.get(0) + "Momo");
         System.out.println(list);
+        System.out.println(list.get("Momo"));
     }
 }
